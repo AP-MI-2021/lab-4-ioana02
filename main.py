@@ -8,8 +8,8 @@ def show_menu():
 
 def citire_multime1():
     lst1 = []
-    lst_str = input("Dati numerele din lista: "))
-    lst_str_split = lst_str.split("")
+    lst_str = int(input("Dati numerele din lista: "))
+    lst_str_split = lst_str.split(" ")
     for num_str in lst_str_split:
         lst.append(int(num_str))
     return lst1
@@ -17,8 +17,8 @@ def citire_multime1():
 
 def citire_multime2():
     lst2 = []
-    lst_str = input("Dati numerele din lista: "))
-    lst_str_split = lst_str.split("")
+    lst_str = int(input("Dati numerele din lista: "))
+    lst_str_split = lst_str.split(" ")
     for num_str in lst_str_split:
         lst.append(int(num_str))
     return lst2
@@ -36,10 +36,11 @@ def elemente_pare1(lst1):
         else:
             return None
     return k
-def test_elemente _pare1():
+
+def test_elemente_pare1():
     assert elemente_pare1([2, 3, 4, 5]) == 2
     assert elemente_pare1([]) is None
-    assert elemente_pare_1([3, 5, 7]) is None
+    assert elemente_pare1([3, 5, 7]) is None
 
 
 def elmente_pare2(lst2):
@@ -54,6 +55,7 @@ def elmente_pare2(lst2):
         else:
             return None
     return h
+
 def test_elemente_pare2():
     assert elemente_pare2([4, 6, 8, 3]) ==3
     assert elemente_pare2([]) is None
@@ -88,6 +90,7 @@ def lista3(lst1, lst2):
     if ok == 1:
         result = lst2
     return result
+
 def test_lista3():
     assert lista3([1,3,7],[2, 4, 3, 7]) == [3, 7]
     assert lista3([1, 2, 3],[4, 5, 6]) is None
@@ -145,9 +148,9 @@ def main():
             print("introdu alt numar")
 
 if_name_== "_main_":
-    test_
-    test_
-    test_
-    test_
+    test_elemente_pare1()
+    test_elemente_pare2()
+    test_lista3()
+    test_is_palindrome()
     test_
     main()
