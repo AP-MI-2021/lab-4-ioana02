@@ -11,7 +11,7 @@ def citire_multime1():
     lst_str = int(input("Dati numerele din lista: "))
     lst_str_split = lst_str.split(" ")
     for num_str in lst_str_split:
-        lst.append(int(num_str))
+        lst1.append(int(num_str))
     return lst1
 
 
@@ -20,7 +20,7 @@ def citire_multime2():
     lst_str = int(input("Dati numerele din lista: "))
     lst_str_split = lst_str.split(" ")
     for num_str in lst_str_split:
-        lst.append(int(num_str))
+        lst2.append(int(num_str))
     return lst2
 
 
@@ -101,6 +101,17 @@ def show_lista3(lst):
     result = lista3()
     print(f'Lista 3 este: {result}')
 
+
+def elem_pozitie():
+    """
+        Concateneaza elementele din cele doua liste care sunt pe aceeasi pozitie
+        param:
+        return: o lista cu elementele concatenate
+    """
+    for i in lst1:
+        for j in lst2:
+            if i == j
+                append
 
 def is_palindrome(n):
         """
